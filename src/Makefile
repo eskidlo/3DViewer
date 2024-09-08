@@ -27,6 +27,7 @@ install:
 	@cmake -B build && make -C build 
 	@mv build 3DViewer
 	@rm -rf 3DViewer/build
+	@$(OPEN_CMD) 3DViewer/3dViewer.app 
 
 uninstall:
 	 rm -rf 3dViewer
